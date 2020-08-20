@@ -28,6 +28,19 @@
 # # my_list =([str[i:i + 2] for i in range(0, len_s, 2)])
 # # my_list.append(" ")
 # print(my_list)
-a = [1, 2, 3, 4, 5, 6, 7, 8]
-b = a[::2]
-print(b)
+import random
+def r_coord(tuple_1)
+    a = -100
+    b = 100
+    Tuple_1=(random.randint(a,b),random.randint(a,b))
+
+# a_x = random.randint(a,b)
+# a_y = random.randint(a,b)
+# b_x = random.randint(a,b)
+# b_y = random.randint(a,b)
+# c_x = random.randint(a,b)
+# c_y = random.randint(a,b)
+triangle = {"A" : ),
+            "B":(b_x,b_y),
+            "C":(c_x,c_y)}
+print(triangle["A"])
