@@ -1,26 +1,24 @@
 import string
 import random
-def create_string(str_random):
-    string_symbol = string.printable
-    my_list = []
-    my_list_num = []
-    lrn = random.randint(100,1000)
-    for num in range(lrn):
-        my_list.append(random.choice(string_symbol))
-        my_list_num.append(num)
-    my_list_num_f = my_list_num[1:lrn - 1]
-    random.shuffle(my_list_num_f)
-    list_9 = my_list_num_f[0:9]
-    for symbol in list_9:
-        my_list[symbol] = "\n"
-    str_random=str("".join(my_list))
-    print(str_random)
-
-# file_writer(my_path):
-my_str = "F:/Vadim/PycharmProjects/First/first.txt"
-file_resolution = my_str.rsplit(".",1)
-if file_resolution[-1] == "txt":
-    create_string(str_1)
-    with open("my_path", "w") as file:
-    file.write("str_1")
-    print(str_f)
+import json
+import csv
+# create_dict_json():
+key_list=[]
+my_dict={}
+quantity_key=random.randint(5,20)
+for i in range(quantity_key):
+    key_list.append("".join(random.choices(string.ascii_lowercase,k=5)))
+# for num in range(quantity_key):
+    x=random.randint(1,3)
+    if x == 1:
+        dat = random.randint(-100,100)
+    elif x == 2:
+        dat = random.random()
+    else:
+        y=random.randint(1,2)
+        if y==1:
+            dat = True
+        else:
+            dat = False
+    my_dict.update({key_list[i]:dat})
+print(my_dict)
