@@ -21,7 +21,7 @@ def generate_a_list_of_folders(list_path):
         if os.path.isdir(str_1):
             list_folders.append(str_1)
     return list_folders
-########### список путей файлов из папки
+########### список путей файлов из папки.
 def generate_a_list_of_files(list_path):
     list_files=[]
     for str_1 in list_path:
